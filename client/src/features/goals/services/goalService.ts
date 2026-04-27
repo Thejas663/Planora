@@ -1,5 +1,5 @@
 import api from '@/lib/axios';
-import { Goal } from '@/types';
+import type { Goal } from '@/types/index';
 
 export const goalService = {
   async getAll(): Promise<Goal[]> {

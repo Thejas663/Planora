@@ -1,5 +1,5 @@
 import api from '@/lib/axios';
-import { AIAnalysis, AIInsightsResponse, Task } from '@/types';
+import type { AIAnalysis, AIInsightsResponse, Task } from '@/types/index';
 
 export const aiService = {
   async analyzeGoal(goalText: string, deadline: string): Promise<AIAnalysis> {

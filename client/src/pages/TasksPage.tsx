@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { CheckSquare, Circle, CheckCircle2, Clock, Trash2, Filter } from 'lucide-react';
 import { useTasks, useUpdateTaskStatus, useDeleteTask } from '@/features/tasks/hooks/useTasks';
 import { useGoals } from '@/features/goals/hooks/useGoals';
 import { PageHeader, LoadingSpinner, EmptyState } from '@/components/common';
 import { PriorityBadge } from '@/components/ui/Badge';
-import { Task } from '@/types';
+import type { Task } from '@/types/index';
 
 export const TasksPage: React.FC = () => {
   const { data: goals = [] } = useGoals();

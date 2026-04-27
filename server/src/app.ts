@@ -14,7 +14,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: env.clientUrl,
+  origin: env.clientUrl.includes(',') ? env.clientUrl.split(',') : env.clientUrl,
   credentials: true,
 }));
 app.use(express.json({ limit: '10mb' }));

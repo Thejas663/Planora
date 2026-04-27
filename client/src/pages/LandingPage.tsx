@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, useScroll, useTransform } from 'motion/react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { Zap, Target, Brain, Calendar, ArrowRight, CheckCircle, Sparkles, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 

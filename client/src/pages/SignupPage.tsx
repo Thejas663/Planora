@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Zap, Mail, Lock, User, Eye, EyeOff } from 'lucide-react';
 import { useAuth } from '@/features/auth/hooks/useAuth';
 import { Input } from '@/components/ui/Input';

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   LayoutDashboard, Target, CheckSquare, Calendar,
   Sparkles, LogOut, ChevronLeft, ChevronRight, Zap

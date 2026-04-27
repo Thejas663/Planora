@@ -1,5 +1,5 @@
 import api from '@/lib/axios';
-import { DailyPlan } from '@/types';
+import type { DailyPlan } from '@/types/index';
 
 export const plannerService = {
   async getPlan(date: string): Promise<DailyPlan> {

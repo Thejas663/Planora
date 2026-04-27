@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   ChevronLeft, ChevronRight, Sparkles, Clock, CheckCircle2, Circle,
   Calendar, RefreshCw
@@ -12,7 +12,7 @@ import { Button } from '@/components/ui/Button';
 import { ProgressBar } from '@/components/ui/ProgressBar';
 import { PriorityBadge } from '@/components/ui/Badge';
 import { queryClient } from '@/lib/queryClient';
-import { Task } from '@/types';
+import type { Task } from '@/types/index';
 
 const dateKey = (d: Date) => d.toISOString().split('T')[0];
 

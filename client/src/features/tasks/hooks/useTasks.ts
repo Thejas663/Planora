@@ -1,6 +1,6 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { taskService } from '../services/taskService';
-import { Task } from '@/types';
+import type { Task } from '@/types/index';
 
 export const useTasks = (filters?: { goal?: string; status?: string; date?: string }) =>
   useQuery({

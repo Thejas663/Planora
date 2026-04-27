@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import {
   Target, CheckSquare, TrendingUp, Clock, Plus, ArrowRight,
   Sparkles, Trophy, AlertTriangle, Lightbulb, Zap
@@ -16,7 +16,7 @@ import { Button } from '@/components/ui/Button';
 import { Modal } from '@/components/ui/Modal';
 import { Input, Textarea } from '@/components/ui/Input';
 import { useCreateGoal } from '@/features/goals/hooks/useGoals';
-import { AIInsight } from '@/types';
+import type { AIInsight } from '@/types/index';
 
 const iconMap: Record<string, React.ReactNode> = {
   trophy: <Trophy size={16} />,

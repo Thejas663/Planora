@@ -1,6 +1,6 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { goalService } from '../services/goalService';
-import { Goal } from '@/types';
+import type { Goal } from '@/types/index';
 
 export const useGoals = () =>
   useQuery({ queryKey: ['goals'], queryFn: goalService.getAll });

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowLeft, Sparkles, Plus, Trash2, CheckCircle2, Circle,
   Clock, Calendar, Edit3, RefreshCw, Target, Brain
@@ -14,7 +14,7 @@ import { Button } from '@/components/ui/Button';
 import { Modal } from '@/components/ui/Modal';
 import { Input, Textarea } from '@/components/ui/Input';
 import { Badge, PriorityBadge, StatusBadge } from '@/components/ui/Badge';
-import { Task } from '@/types';
+import type { Task } from '@/types/index';
 
 export const GoalDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();

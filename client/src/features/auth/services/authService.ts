@@ -1,5 +1,5 @@
 import api from '@/lib/axios';
-import { User } from '@/types';
+import type { User } from '@/types/index';
 
 interface AuthResponse {
   token: string;

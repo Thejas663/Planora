@@ -1,5 +1,5 @@
 import api from '@/lib/axios';
-import { Task } from '@/types';
+import type { Task } from '@/types/index';
 
 export const taskService = {
   async getAll(filters?: { goal?: string; status?: string; date?: string }): Promise<Task[]> {

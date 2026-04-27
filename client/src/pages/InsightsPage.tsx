@@ -1,11 +1,11 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Sparkles, Trophy, TrendingUp, AlertTriangle, Lightbulb, Zap, Target, RefreshCw } from 'lucide-react';
 import { useAIInsights } from '@/features/ai/hooks/useAI';
 import { PageHeader, LoadingSpinner } from '@/components/common';
 import { Button } from '@/components/ui/Button';
 import { ProgressBar } from '@/components/ui/ProgressBar';
-import { AIInsight } from '@/types';
+import type { AIInsight } from '@/types/index';
 
 const iconMap: Record<string, React.ElementType> = {
   trophy: Trophy,

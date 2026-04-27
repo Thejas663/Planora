@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Target, Plus, CheckCircle, Clock, ArrowRight } from 'lucide-react';
 import { useGoals, useCreateGoal } from '@/features/goals/hooks/useGoals';
 import { PageHeader, LoadingSpinner, EmptyState } from '@/components/common';
