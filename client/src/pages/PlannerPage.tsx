@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ChevronLeft, ChevronRight, Sparkles, Clock, CheckCircle2, Circle,
-  Calendar, RefreshCw
+  Calendar
 } from 'lucide-react';
 import { useQuery } from '@tanstack/react-query';
 import { plannerService } from '@/features/planner/services/plannerService';

@@ -3,17 +3,17 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowLeft, Sparkles, Plus, Trash2, CheckCircle2, Circle,
-  Clock, Calendar, Edit3, RefreshCw, Target, Brain
+  Clock, Calendar, RefreshCw, Target, Brain
 } from 'lucide-react';
 import { useGoal, useUpdateGoal, useDeleteGoal } from '@/features/goals/hooks/useGoals';
 import { useTasks, useCreateTask, useUpdateTaskStatus, useDeleteTask } from '@/features/tasks/hooks/useTasks';
 import { useGenerateTasks, useReplan } from '@/features/ai/hooks/useAI';
-import { PageHeader, LoadingSpinner, EmptyState } from '@/components/common';
+import { LoadingSpinner, EmptyState } from '@/components/common';
 import { ProgressBar } from '@/components/ui/ProgressBar';
 import { Button } from '@/components/ui/Button';
 import { Modal } from '@/components/ui/Modal';
 import { Input, Textarea } from '@/components/ui/Input';
-import { Badge, PriorityBadge, StatusBadge } from '@/components/ui/Badge';
+import { PriorityBadge, StatusBadge } from '@/components/ui/Badge';
 import type { Task } from '@/types/index';
 
 export const GoalDetailPage: React.FC = () => {
@@ -21,7 +21,6 @@ export const GoalDetailPage: React.FC = () => {
   const navigate = useNavigate();
   const { data: goal, isLoading } = useGoal(id!);
   const { data: tasks = [] } = useTasks({ goal: id });
-  const updateGoal = useUpdateGoal();
   const deleteGoal = useDeleteGoal();
   const createTask = useCreateTask();
   const updateTaskStatus = useUpdateTaskStatus();

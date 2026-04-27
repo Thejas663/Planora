@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CheckSquare, Circle, CheckCircle2, Clock, Trash2, Filter } from 'lucide-react';
+import { CheckSquare, Circle, CheckCircle2, Clock, Trash2 } from 'lucide-react';
 import { useTasks, useUpdateTaskStatus, useDeleteTask } from '@/features/tasks/hooks/useTasks';
 import { useGoals } from '@/features/goals/hooks/useGoals';
 import { PageHeader, LoadingSpinner, EmptyState } from '@/components/common';
